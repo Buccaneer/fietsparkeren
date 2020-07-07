@@ -126,6 +126,12 @@ $(document).ready(function($) {
 		});
 	};
 	carousel();
+	
+	function resetNavClasses() {
+	  ["#wat-als-link", "#inschrijven-link", "#hoe-link", "#over-link", "#over-link", "#intro-link"].forEach((id) => {
+	    $(id).removeClass("active");
+	  })
+	}
 
 	// scroll
 	var scrollWindow = function() {
@@ -134,6 +140,20 @@ $(document).ready(function($) {
 					st = $w.scrollTop(),
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
+			resetNavClasses();
+			if (st + 50 > $("#wat-als").offset().top) {
+				$("#wat-als-link").addClass("active");
+			} else if (st + 50 > $("#inschrijven").offset().top) {
+				$("intro-link").removeClass("active");
+				$("#inschrijven-link").addClass("active");
+			} else if (st + 50> $("#hoe").offset().top) {
+				$("intro-link").removeClass("active");
+				$("#hoe-link").addClass("active");
+			} else if (st + 50 > $("#over").offset().top) {
+				$("#over-link").addClass("active");
+			} else {
+				$("#intro-link").addClass("active");
+			}
 
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
