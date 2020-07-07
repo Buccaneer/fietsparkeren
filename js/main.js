@@ -6,6 +6,17 @@
 $(document).ready(function($) {
 
 	"use strict";
+	
+	/*$(window).scroll(function () {
+		console.log($(this).scrollTop())
+		console.log($('#wheel'))
+      if ($(this).scrollTop() > 200) { 
+        $('#wheel').attr('src', '/images/wheel.svg');
+      } else {
+        $('#wheel').attr('src', '/images/wheel-white.svg');
+      }
+	  $('#wheel').parent().hide().show(0);
+    });*/
 
 	$(window).stellar({
     responsive: false,
@@ -134,7 +145,12 @@ $(document).ready(function($) {
 					st = $w.scrollTop(),
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
-
+			if (st > 200) { 
+				$('#wheel').attr('src', '/images/wheel.svg');
+			} else {
+				$('#wheel').attr('src', '/images/wheel-white.svg');
+			}
+			console.log($("#wheel"));
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');	
@@ -291,8 +307,6 @@ $(document).ready(function($) {
 	  'format': 'd MM, yyyy',
 	  'autoclose': true
 	});
-
-
-
+  
 });
 
