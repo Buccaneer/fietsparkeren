@@ -21,6 +21,10 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+	
+	<style>
+	  @media (max-width: 768px) { .storeItem {margin-bottom: 1.2rem;} }
+	</style>
 
   </head>
   <body>
@@ -92,7 +96,7 @@
   </div>
   
   <!-- EERSTE FILMPJE -->
-  <div id="over" style="padding-top: 10em;" class="site-section section-counter">
+  <div id="over" style="margin: 1em; padding-top: 10em;" class="site-section section-counter">
     <div class="container">
       <div class="row">
         <div class="col-sm text-center">
@@ -227,15 +231,18 @@
         
       </div>
 	  
-	  <div class="row" style="margin-top: 4em;">
-		<div class="col">
+	  <div class="row align-items-center" style="margin-top: 4em;">
+	    <div class="col-md-4 storeItem">
+		  <h2 class="heading" style="text-align: center; color: rgb(2, 56, 72);">Binnenkort verkrijgbaar op</h2>
+		</div>
+		<div class="col-md-4 storeItem">
 			<a target="_blank" rel="noopener noreferrer" title="Get it on AppStore">
-				<img src="images/app_store_en.png" alt="logo appstore" style="width: 16.8em; height: 5em; display: block; margin-left: auto; margin-right: auto;">
+				<img src="images/app_store_en.png" alt="logo appstore" style="filter: grayscale(100%); width: 16.8em; height: 5em; display: block; margin-left: auto; margin-right: auto;">
 			</a>
 		</div>
-		<div class="col">
+		<div class="col-md-4 storeItem">
 			<a target="_blank" title="Get it on Google Play">
-				<img src="images/google_play_en.png" alt="logo google play" style="width: 16.8em; height: 5em; display: block; margin-left: auto; margin-right: auto;">
+				<img src="images/google_play_en.png" alt="logo google play" style="filter: grayscale(100%); width: 16.8em; height: 5em; display: block; margin-left: auto; margin-right: auto;">
 			</a>
 		</div>
 	  </div>
