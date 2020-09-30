@@ -66,6 +66,20 @@
 				height: 100%;
 			}
 
+			.footer figure {
+				width: 100%;
+				height: 100%;
+				max-width: 160px;
+				margin: 0;
+			}
+
+			.figure-a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+
 			@media (max-width: 768px) {
 				.mobileMargin {margin-bottom: 1.2rem;}
 				.form-rounded {
@@ -85,6 +99,10 @@
 
 				.intro-block {
 					height: 100vh;
+				}
+
+				.figure-a {
+					margin-bottom: 1.5rem;
 				}
 			}
 
@@ -423,30 +441,31 @@
 
 <footer class="footer" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/bg_1.jpg');">
     <div style="padding: 3em; background: rgba(255, 255, 255, 0.5);">
-		<!--div class="container">
-			<div class="row mb-5">
-			<div class="col-md-6 col-lg-4">
-			<a href="https://fietsberaad.be/">
-			<figure class="mr-3">
-			<img src="images/fietsberaad.svg" alt="" class="img-fluid">
-			</figure>
-			</a>
+		<div class="container">
+			<div class="row mb-5 justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<a class="figure-a" href="https://fietsberaad.be/">
+						<figure class="mr-3">
+							<img src="images/fietsberaad.svg" alt="" class="img-fluid">
+						</figure>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a class="figure-a" href="https://www.imec.be/nl/">
+						<figure class="mr-3" style="max-width: 210px;">
+							<img src="images/imec.svg" alt="" class="img-fluid">
+						</figure>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a class="figure-a" href="https://mobilidata.be/nl">
+						<figure class="mr-3">
+							<img src="images/mobilidata.png" alt="" class="img-fluid">
+						</figure>
+					</a>
+				</div>
 			</div>
-			<div class="col-md-6 col-lg-4">
-			<a href="https://www.imec.be/nl/"><figure class="mr-3">
-			<img src="images/imec.svg" alt="" class="img-fluid">
-			</figure>
-			</a>
-			</div>
-			<div class="col-md-6 col-lg-4">
-			<a href="https://mobilidata.be/nl">
-			<figure class="mr-3">
-			<img src="images/mobilidata.png" alt="" class="img-fluid">
-			</figure>
-			</a>
-			</div>
-			</div>
-		</div-->
+		</div>
 	</div>
 	<div class="content pt-5">
         <div class="col-md-12 text-center">
