@@ -27,21 +27,46 @@
 
 			.form-rounded {
 				margin-top: 1.2rem;
-				padding: 10px 20px 10px 20px;
+				padding: 10px 20px;
 				background-color: rgba(247, 202, 68, 0.9);
 				box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);
 				border-radius: 10px;
 			}
 
+			.info-block-header {
+				color: white;
+				padding: 10px;
+				background-color: rgba(2, 56, 72, 0.9);
+				box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);
+			}
+
+			.info-block {
+				color: rgb(2, 56, 72);
+				padding: 10px;
+				background-color: rgba(247, 202, 68, 0.9);
+				box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);
+				border-radius: 5px;
+			}
+
 			@media (max-width: 768px) {
 				.mobileMargin {margin-bottom: 1.2rem;}
 				.form-rounded {
-					marin-top: 0;
+					margin-top: 0;
 					border-radius: 0;
 				}
 
+				.info-block-header, .info-block {
+					border-radius: 0;
+					padding: 8px 20px;
+					margin-bottom: 0;
+				}
+
+				.info-blocks {
+					padding: 0;
+				}
+
 				.intro-block {
-					height: 99vh;
+					height: 100vh;
 				}
 			}
 
@@ -139,9 +164,9 @@
 									</form-->
 								</div>
 							</div>
-							<div class="col-md-6" style="">
-								<h2 style="color: white; padding: 10px; background-color: rgba(2, 56, 72, 0.9); box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);">24u Zone, maak fietsparkeren géén moeilijke opdracht, maar een doodgewone.</h2>
-								<p style="color: rgb(2, 56, 72); padding: 10px; background-color: rgba(247, 202, 68, 0.9); box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5); border-radius: 5px;">Reserveer, parkeer, wederkeer, <br/>dit alles met een gerust hart </p>
+							<div class="col-md-6 info-blocks" style="">
+								<h2 class="info-block-header" style="">24u Zone, maak fietsparkeren géén moeilijke opdracht, maar een doodgewone.</h2>
+								<p  class="info-block" style="">Reserveer, parkeer, wederkeer, <br/>dit alles met een gerust hart </p>
 							</div>
 						</div>
 					</div>
