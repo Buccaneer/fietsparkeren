@@ -48,6 +48,24 @@
 				border-radius: 5px;
 			}
 
+			.embed-container {
+				position: relative;
+				padding-bottom: 56.25%;
+				height: 0;
+				overflow: hidden;
+				max-width: 100%;
+			}
+
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+			}
+
 			@media (max-width: 768px) {
 				.mobileMargin {margin-bottom: 1.2rem;}
 				.form-rounded {
@@ -210,7 +228,9 @@
 						</div>
 					</div>
 					<div class="col-sm">
-						<iframe width="759" height="427" src="https://www.youtube.com/embed/xj5Tb0rdRog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="embed-container">
+							<iframe src="https://www.youtube.com/embed/xj5Tb0rdRog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -366,7 +386,9 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<iframe width="759" height="427" style="display: block; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/pgI2mbyMZQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="embed-container">
+					<iframe src="https://www.youtube.com/embed/pgI2mbyMZQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
 		<div class="row" style="margin-top: 3em">
