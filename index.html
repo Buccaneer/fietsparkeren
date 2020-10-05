@@ -82,8 +82,16 @@
 			.fixed-icon {
 				width: 30px;
 			}
+			
+			
+  			h2.inschrijven {
+				font-size: 80px;
+			}
 
 			@media (max-width: 768px) {
+				h2.inschrijven {
+					font-size: 40px;
+				}
 				.mobileMargin {margin-bottom: 1.2rem;}
 				.form-rounded {
 					margin-top: 0;
@@ -185,7 +193,7 @@
 												<div class="response" id="mce-success-response" style="display:none"></div>
 											</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 											<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5ac78e38a1e5fab108a468477_88848ffb0e" tabindex="-1" value=""></div>
-											<div class="clear"><input type="submit" value="Inschrijven" name="subscribe" id="mc-embedded-subscribe" class="btn py-2"></div>
+											<div class="clear"><input type="submit" value="Inschrijven*" name="subscribe" id="mc-embedded-subscribe" class="btn py-2"></div>
 										</div>
 									</form>
 									<!--form action="#" method="post">
@@ -355,26 +363,28 @@
 
 				<div class="form-volunteer">
 
-					<h2>Schrijf je nu in</h2>
+					<h2 class="heading mb-6 inschrijven">Schrijf je in</h2>
 
-					<form action="#" method="post">
-						<div class="form-group">
-							<!-- <label for="name">Telnr</label> -->
-							<input type="text" class="form-control py-2" id="name" placeholder="Telefoonnummer">
-						</div>
-						<div class="form-group">
-							<!-- <label for="adres">Adres</label> -->
-							<input type="text" class="form-control py-2" id="adres" placeholder="Adres of fietspunt">
-						</div>
-						<div class="form-group">
-							<p>Geef je adres in of bij welk fietspunt je de sticker wenst af te halen.
-							</p>
-							<!-- <label for="v_message">Email</label> -->
-							<!--textarea name="v_message" id="" cols="30" rows="3" class="form-control py-2" placeholder="Write your message"></textarea-->
-							<!-- <input type="text" class="form-control py-2" id="email"> -->
-						</div>
-						<div class="form-group">
-							<input type="none" class="btn btn-white px-5 py-2" value="Volgende stap">
+					<form action="https://mobilidata.us3.list-manage.com/subscribe/post?u=5ac78e38a1e5fab108a468477&amp;id=88848ffb0e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<div class="mc-field-group">
+								<label for="mce-EMAIL">E-mailadres</label>
+								<input type="email" value="" name="EMAIL" class="required email form-control py-2" id="mce-EMAIL">
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-FNAME">Voornaam</label>
+								<input type="text" value="" name="FNAME" class="required form-control py-2" id="mce-FNAME">
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-LNAME">Achternaam</label>
+								<input type="text" value="" name="LNAME" class="required form-control py-2" id="mce-LNAME">
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5ac78e38a1e5fab108a468477_88848ffb0e" tabindex="-1" value=""></div>
+							<div class="clear"><input type="submit" value="Inschrijven*" name="subscribe" id="mc-embedded-subscribe" class="btn py-2"></div>
 						</div>
 					</form>
 				</div>
@@ -471,6 +481,10 @@
 	</div>
 	<div class="content pt-5">
         <div class="col-md-12 text-center">
+
+			<p>
+				* Dit is een onderzoek van imec & Fietsberaad en gaat momenteel nog niet over een bestaand product
+			</p>
 
             <p>
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
