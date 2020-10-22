@@ -141,9 +141,7 @@ $(document).ready(function($) {
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
 			resetNavClasses();
-			if (st + 50 > $("#wat-als").offset().top) {
-				$("#wat-als-link").addClass("active");
-			} else if (st + 50 > $("#inschrijven").offset().top) {
+			if (st + 50 > $("#inschrijven").offset().top) {
 				$("intro-link").removeClass("active");
 				$("#inschrijven-link").addClass("active");
 			} else if (st + 50> $("#hoe").offset().top) {
