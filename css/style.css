@@ -641,7 +641,6 @@ textarea.form-control {
 .featured-section img {
   -webkit-box-shadow: 0 4px 30px -5px black;
   box-shadow: 0 4px 30px -5px black;
-  border-radius: 7px;
 }
 .featured-donate h2,
 .featured-section h2 {
